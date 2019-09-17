@@ -1,0 +1,28 @@
+{
+  "name": "nc-dashboard",
+  "version": "1.0.0",
+  "description": "A web page to show Jenkins job status and Google Test results.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NavInfoNC/nc-dashboard.git"
+  },
+  "keywords": [
+    "Jenkins",
+    "DashBoard",
+    "Navicore"
+  ],
+  "author": "GIS Core R&D Department",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NavInfoNC/nc-dashboard/issues"
+  },
+  "homepage": "https://github.com/NavInfoNC/nc-dashboard#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
