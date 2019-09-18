@@ -6,5 +6,7 @@ app.use(express.static(path.join(__dirname,"public")));
 app.get('/', (req, res) => {
     res.sendfile(path.join(__dirname,"views/index.html"));
 });
-
+app.get('/data', (req, res) => {
+    res.sendfile(path.join(__dirname,"data/projects.json"));
+});
 app.listen(port, () => console.log('Listening port:' + port));

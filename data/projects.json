@@ -1,0 +1,26 @@
+[
+    {
+        "url": "",
+        "name": "Nc-DashBoard",
+        "user": "",
+        "token": "",
+        "importance": 2,
+        "isGoogleTest": false
+    },
+    {
+        "url": "",
+        "name": "Navicore",
+        "user": "",
+        "token": "",
+        "importance": 1,
+        "isGoogleTest": false
+    },
+    {
+        "url": "",
+        "name": "Nc-Server",
+        "user": "",
+        "token": "",
+        "importance": 1,
+        "isGoogleTest": false
+    }
+]
