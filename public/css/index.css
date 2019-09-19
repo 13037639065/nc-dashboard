@@ -1,1 +1,16 @@
 /* TODO */
+@keyframes color_change {
+    from { color: rgba(255, 255, 255, 0.2); }
+    to { color: white; }
+}
+  
+.building {
+    animation-name: color_change;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.box div {
+    position: absolute;
+}

@@ -1,13 +1,13 @@
-var width =screen.width, height = screen.height;
-var daats = d3.json("/data");
+var width = window.innerWidth;
+var height = window.innerHeight;
 
-daats.then(function (json) {
+d3.json("/data").then(function (json) {
     var data = constructD3Data(json);
     var treemap = d3.treemap()
         .tile(d3.treemapResquarify)
         .size([width, height])
         .round(true)
-        .paddingInner(10);
+        .paddingInner(5);
 
     var hi = d3.hierarchy(data).sum(function (d) { return d.size; })
         .sort(function (a, b) { return b.value - a.value; });
@@ -17,29 +17,11 @@ daats.then(function (json) {
 
     treemap(hi);
 
-    var svg = d3.select("svg");
-    var nodes = svg.selectAll("g")
-        .data(hi.leaves())
-        .enter().append("g");
-
-    nodes.append("rect")
-        .attr("x", function (d) { return d.x0; })
-        .attr("y", function (d) { return d.y0; })
-        .attr("width", function (d) { return d.x1 - d.x0; })
-        .attr("height", function (d) { return d.y1 - d.y0; })
-        .attr("fill", function (d) { return "blue"; });
-
-    nodes.append("text")
-        .attr("x", function (d) { return d.x0; })
-        .attr("y", function (d) { return d.y0; })
-        .attr("dx", "0.5em")
-        .attr("dy", "1.5em")
-        .attr("fill", "red")
-        .attr("font-size", 30)
-        .text(function (d) {
-            return d.data.name + ":" + d.data.size;
-        });
-
+    hi.children.forEach(element=>{
+        console.log(element);
+        addOneBox(element.data.name,element.x0,element.y0,element.x1,element.y1);
+        //addOneBox(element.)
+    });
 })
 
 function constructD3Data(oriData) {
@@ -56,3 +38,8 @@ function constructD3Data(oriData) {
     return data;
 }
 
+function addOneBox(id,x0,y0,x1,y1) {
+    var pos = document.getElementById("NC-DashBoard");
+    pos.innerHTML = pos.innerHTML + `<div id='${id}' style='left:${x0}px;top:${y0}px;\
+        width:${x1-x0}px;height:${y1-y0}px;background-color: #3fa7f2;'></div>`;
+}
