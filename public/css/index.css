@@ -3,7 +3,15 @@
     from { color: rgba(255, 255, 255, 0.2); }
     to { color: white; }
 }
-  
+
+html,body {
+    color: white;
+}
+
+.text-name {
+    padding: 3%;
+}
+ 
 .building {
     animation-name: color_change;
     animation-duration: 1s;
@@ -13,4 +21,28 @@
 
 .box div {
     position: absolute;
+}
+
+.blue {
+    background-color: #3fa7f2;
+}
+
+.red {
+    background-color: #d82027;
+}
+
+.deep_red {
+    background-color: #300000;
+}
+
+.yellow {
+    background-color: #f28a3f;
+}
+
+.disabled,.aborted{
+    background-color: dimgrey;
+}
+
+.timeout {
+    background-color: #000000;
 }

@@ -1,25 +1,17 @@
 [
     {
-        "url": "",
-        "name": "Nc-DashBoard",
-        "user": "mapbar",
-        "token": "",
-        "importance": 2,
-        "isGoogleTest": false
-    },
-    {
-        "url": "http://build.navicore.cn/job/NaviCore/",
-        "name": "Navicore",
-        "user": "mapbar",
-        "token": "f86f51987e9f910a84f77d5610d6f8e3",
+        "url": "http://localhost:8080/job/test/",
+        "name": "NaviCoreAutoTest",
+        "user": "wurong",
+        "token": "11b12f95b1e6a79ecb5d9b67a54748d5d0",
         "importance": 1,
         "isGoogleTest": false
     },
     {
-        "url": "",
-        "name": "Nc-Server",
-        "user": "",
-        "token": "",
+        "url": "http://localhost:8080/job/hello%20world/",
+        "name": "hello",
+        "user": "wurong",
+        "token": "11b12f95b1e6a79ecb5d9b67a54748d5d0",
         "importance": 1,
         "isGoogleTest": false
     }
