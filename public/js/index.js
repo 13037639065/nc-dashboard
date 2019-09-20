@@ -1,8 +1,10 @@
 var width = window.innerWidth;
 var height = window.innerHeight;
+var projects = null;
 
-d3.json("/data").then(function (json) {
+$.get("/data",function(json){
     var data = constructD3Data(json);
+    projects = json;
     var treemap = d3.treemap()
         .tile(d3.treemapResquarify)
         .size([width, height])
@@ -18,21 +20,21 @@ d3.json("/data").then(function (json) {
     treemap(hi);
 
     hi.children.forEach(element=>{
-        console.log(element);
-        addOneBox(element.data.name,element.x0,element.y0,element.x1,element.y1);
-        //addOneBox(element.)
+        addOneBox(element.data.id,element.x0,element.y0,element.x1,element.y1);
     });
-})
+});
 
 function constructD3Data(oriData) {
     var data = {
         "name": "Nc-dashboard",
         "children": []
     }
+    var id = 0;
     oriData.forEach(element => {
         data['children'].push({
             name: element.name,
-            size: element.importance
+            size: element.importance,
+            id: id++
         });
     });
     return data;
@@ -43,3 +45,8 @@ function addOneBox(id,x0,y0,x1,y1) {
     pos.innerHTML = pos.innerHTML + `<div id='${id}' style='left:${x0}px;top:${y0}px;\
         width:${x1-x0}px;height:${y1-y0}px;background-color: #3fa7f2;'></div>`;
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+// for update
+// TODO

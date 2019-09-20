@@ -2,16 +2,16 @@
     {
         "url": "",
         "name": "Nc-DashBoard",
-        "user": "",
+        "user": "mapbar",
         "token": "",
         "importance": 2,
         "isGoogleTest": false
     },
     {
-        "url": "",
+        "url": "http://build.navicore.cn/job/NaviCore/",
         "name": "Navicore",
-        "user": "",
-        "token": "",
+        "user": "mapbar",
+        "token": "f86f51987e9f910a84f77d5610d6f8e3",
         "importance": 1,
         "isGoogleTest": false
     },
