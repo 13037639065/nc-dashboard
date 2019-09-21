@@ -1,4 +1,8 @@
-/* TODO */
+@font-face {
+    font-family: FjallaOne;
+    src: url("/fonts/FjallaOne.woff2") format('woff2');
+}
+
 @keyframes color_change {
     from { color: rgba(255, 255, 255, 0.2); }
     to { color: white; }
@@ -6,6 +10,7 @@
 
 html,body {
     color: white;
+    font-family: FjallaOne;
 }
 
 .text-name {
