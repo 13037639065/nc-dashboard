@@ -4,16 +4,14 @@
         "name": "NaviCore",
         "user": "mapbar",
         "token": "f86f51987e9f910a84f77d5610d6f8e3",
-        "importance": 4,
-        "isGoogleTest": false
+        "importance": 4
     },
     {
         "url": "http://build.navicore.cn/job/navicore.mapbar.com/",
         "name": "navicore.mapbar.com",
         "user": "mapbar",
         "token": "f86f51987e9f910a84f77d5610d6f8e3",
-        "importance": 2,
-        "isGoogleTest": false
+        "importance": 2
     },
     {
         "url": "http://build.navicore.cn/job/NaviCoreAutoTest/",
@@ -21,14 +19,13 @@
         "user": "mapbar",
         "token": "f86f51987e9f910a84f77d5610d6f8e3",
         "importance": 2,
-        "isGoogleTest": false
+        "googleTestResultUrl": ""
     },
     {
         "url": "http://build.navicore.cn/job/NaviCoreGitMac/",
         "name": "IOS",
         "user": "mapbar",
         "token": "f86f51987e9f910a84f77d5610d6f8e3",
-        "importance": 2,
-        "isGoogleTest": false
+        "importance": 2
     }
 ]
