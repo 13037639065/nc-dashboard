@@ -61,8 +61,9 @@ function updateAllProjects() {
     });
 }
 function updateProject(id) {
+    $("#" + id).addClass("blue");
+    $("#" + id + "-name").html("<h1>"+projects[id].name+"</h1>");
     $.getJSON("/status/" + id, function (data) {
-        $("#" + id + "-name").html("<h1>"+projects[id].name+"</h1>");
         $("#" + id).removeClass();
         $("#" + id).addClass(data.color);
     });

@@ -1,18 +1,34 @@
 [
     {
-        "url": "http://localhost:8080/job/test/",
-        "name": "NaviCoreAutoTest",
-        "user": "wurong",
-        "token": "11b12f95b1e6a79ecb5d9b67a54748d5d0",
-        "importance": 1,
+        "url": "http://build.navicore.cn/job/NaviCore/",
+        "name": "NaviCore",
+        "user": "mapbar",
+        "token": "f86f51987e9f910a84f77d5610d6f8e3",
+        "importance": 4,
         "isGoogleTest": false
     },
     {
-        "url": "http://localhost:8080/job/hello%20world/",
-        "name": "hello",
-        "user": "wurong",
-        "token": "11b12f95b1e6a79ecb5d9b67a54748d5d0",
-        "importance": 1,
+        "url": "http://build.navicore.cn/job/navicore.mapbar.com/",
+        "name": "navicore.mapbar.com",
+        "user": "mapbar",
+        "token": "f86f51987e9f910a84f77d5610d6f8e3",
+        "importance": 2,
+        "isGoogleTest": false
+    },
+    {
+        "url": "http://build.navicore.cn/job/NaviCoreAutoTest/",
+        "name": "NaviCoreAutoTest",
+        "user": "mapbar",
+        "token": "f86f51987e9f910a84f77d5610d6f8e3",
+        "importance": 2,
+        "isGoogleTest": false
+    },
+    {
+        "url": "http://build.navicore.cn/job/NaviCoreGitMac/",
+        "name": "IOS",
+        "user": "mapbar",
+        "token": "f86f51987e9f910a84f77d5610d6f8e3",
+        "importance": 2,
         "isGoogleTest": false
     }
 ]
